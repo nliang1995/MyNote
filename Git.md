@@ -8,18 +8,23 @@
 | git status                            | 查看本地库状态                         |
 | git add 文件名                        | 添加到暂存区                           |
 | git rm --cached 文件名                | 删除暂存区的文件                       |
+| git diff                              | 输出工作区与暂存区的不同               |
+| git diff \<commit-id> \<commit-id>    | 输出本地仓库中指定两次提交的不同       |
+| git diff --cached                     | 输出暂存区和本地最近版本的不同         |
+| git diff HEAD                         | 输出工作区、暂存区和本地最近版本的不同 |
 | git commit -m "版本信息"  文件名      | 提交到本地库                           |
 | git reflog                            | 查看历史记录                           |
 | git reset --hard 版本号               | 版本穿梭                               |
 
 ## 分支的操作
 
-| 命令名称            | 作用                         |
-| ------------------- | ---------------------------- |
-| git branch 分支名   | 创建分支                     |
-| git branch -v       | 查看分支23                   |
-| git checkout 分支名 | 切换分支                     |
-| git merge 分支名    | 把指定的分支合并到当前分支上 |
+| 命令名称            | 作用                           |
+| ------------------- | ------------------------------ |
+| git branch 分支名   | 创建分支                       |
+| git branch -v       | 查看分支                       |
+| git branch -vv      | 展示本地分支关联远程仓库的情况 |
+| git checkout 分支名 | 切换分支                       |
+| git merge 分支名    | 把指定的分支合并到当前分支上   |
 
 ## 远程仓库操作
 
