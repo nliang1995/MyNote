@@ -7,6 +7,7 @@
 | git init                              | 初始化本地库                           |
 | git status                            | 查看本地库状态                         |
 | git add 文件名                        | 添加到暂存区                           |
+| git ls-files                          | 查看缓存区文件                         |
 | git rm --cached 文件名                | 删除暂存区的文件                       |
 | git diff                              | 输出工作区与暂存区的不同               |
 | git diff \<commit-id> \<commit-id>    | 输出本地仓库中指定两次提交的不同       |
