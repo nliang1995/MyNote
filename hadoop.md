@@ -1,12 +1,18 @@
-#### Hadoop1.x、2.x和3.x的区别
+[toc]
+
+<div style="page-break-after:always"></div>
+
+
+
+### Hadoop1.x、2.x和3.x的区别
 
 - Hadoop1.x：由**MapReduce（计算+资源调度）**、HDFS（数据存储）和Common（辅助工具）组成。
 
-- Hadoop2.x：由**MapReduce（计算）**、**Yarn（资源调度）**、HDFS（数据存储）和Common（辅助工具—）组成。
+- Hadoop2.x：由**MapReduce（计算）**、**Yarn（资源调度）**、HDFS（数据存储）和Common（辅助工具）组成。
 
 - Hadoop3.x：与Hadoop2.x的组成基本相同。
 
-#### HDFS（Hadoop Distributed File Syste）
+### HDFS（Hadoop Distributed File Syste）
 
 HDFS是一个文件系统，用于存储文件，通过目录树来定文件；其次，它是分布式的，由多台服务器联合起来实现其功能，集群中的服务器有各自的角色。适合一次写入，多次读出的场景。
 
@@ -17,7 +23,7 @@ HDFS遵循主/从架构，由单个NameNode（NN）和多个DataNode（DN）组�
 * DataNode（DN）：在本地文件系统存储文件块数据以及块数据的校验和。
 * Secondary NameNode（2NN）：每隔一段时间对NameNode元数据备份。
 
-#### Yarn（Yet Another Resource Negotiator）
+### Yarn（Yet Another Resource Negotiator）
 
 Apache Yarn是Hadoop2.x引入的集群资源管理系统。用户可以将各种服务框架部署在Yarn中，由Yarn进行统一地管来和资源分配。
 
